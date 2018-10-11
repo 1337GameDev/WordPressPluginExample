@@ -1,6 +1,10 @@
 # WordPressPluginExample
 An example plugin for WordPress, using good practices and [Composer](https://getcomposer.org/).
 
+WordPress            |  Composer
+:-------------------------:|:-------------------------:
+<img src="https://github.com/1337GameDev/WordPressPluginExample/blob/master/images/wordpress-logo.jpg?raw=true" width="100" height="100" style="display:inline-block;">  |  <img src="https://github.com/1337GameDev/WordPressPluginExample/blob/master/images/composer.png?raw=true" width="100" height="122" style="display:inline-block;">
+
 ## Structure
 * TestPlugin
   * composer.json - A base composer config file
@@ -13,6 +17,7 @@ An example plugin for WordPress, using good practices and [Composer](https://get
     * admin.js - JavaScript for use in admin areas of this plugin
     * user.js - JavaScript for use in user accessible areas of this plugin
     * helper.js - JavaScript loaded in admin areas and user accessible areas of this plugin
+  * images - a folder to organize this plugin's images
   * vendor - composer's folder for dependencies it has downloaded
   * includes - a folder used for source files used by this plugin, namespace mapped via **composer.json**
   * uninstall.php - a standard php file WordPress looks for when uninstalling a plugin
