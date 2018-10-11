@@ -1,0 +1,188 @@
+<?php
+namespace TestPlugin {
+    use TestPlugin\TestPlugin_Options;
+    use TestPlugin\TestPlugin_UserAjax;
+    use TestPlugin\TestPlugin_AdminAjax;
+    use TestPlugin\TestPlugin_Admin;
+    use TestPlugin\UtilityFunctions;
+
+    class TestPlugin_Class {
+        public static $pluginName = "Test Plugin";
+        public static $test_plugin_version = "1.0.0";
+        public static $test_db_table_prefix = "";//use this to "scope" your db tables when doing queries / storing data in custom tables
+
+        public static $test_plugin_example_page_url = "examplePageName";
+        public static $version_option_name = "test_plugin_db_version";
+
+        public function __construct() {
+            global $wpdb;
+            TestPlugin_Class::$test_db_table_prefix = $wpdb->prefix . 'test_';
+
+            add_action( 'plugins_loaded', array($this,'initPlugin') );
+        }
+
+        public function initPlugin(){
+            //include_once(TestPlugin_DIR.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'ajax_admin.php');
+            //include_once(TestPlugin_DIR.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'ajax_user.php');
+            //include_once(TestPlugin_DIR.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'options.php');
+
+
+            # Create admin page
+            // Run earlier than default - hence earlier than other components
+            // admin_menu runs earlier than other plugins
+            add_action('admin_menu', array($this, 'admin_menu'), 9);
+            add_action('admin_init', array($this, 'admin_menu'), 9);
+            //associate the activation hook
+            register_activation_hook(__FILE__, array(__NAMESPACE__.'\\TestPlugin_Class', 'activate_ops'));
+            //associate the deactivet hook
+            register_deactivation_hook(__FILE__, array(__NAMESPACE__.'\\TestPlugin_Class', 'deactivate_ops'));
+
+            //register ajax endpoints
+            add_action('wp_ajax_getTestAdminAjaxResponse', array(__NAMESPACE__ . '\\TestPlugin_AdminAjax', 'getTestAdminAjaxResponse'));
+            add_action('wp_ajax_nopriv_getTestUserAjaxResponse', array(__NAMESPACE__ . '\\TestPlugin_UserAjax', 'getTestUserAjaxResponse'));
+            add_action('wp_ajax_getTestUserAjaxResponse', array(__NAMESPACE__ . '\\TestPlugin_UserAjax', 'getTestUserAjaxResponse'));
+
+            //register menu options
+            add_action('admin_init', array(__NAMESPACE__ .'\\TestPlugin_Options', 'admin_init'));
+            add_action('admin_menu', array(__NAMESPACE__ .'\\TestPlugin_Options', 'add_admin_pages'));
+
+            //register enqueue methods for determining what scripts/styles to enqueue using the wordpress api
+            add_action('wp_enqueue_scripts', array(__NAMESPACE__.'\\TestPlugin_Class', 'enqueuePluginPageScriptsAndStyles') );
+
+            //check db when plugin is loaded if the db needs to be updated (the activation hook isn't called when the plugin is upgraded)
+            TestPlugin_Class::update_db_check();
+        }
+
+        public static function update_db_check() {
+            if ( get_option( TestPlugin_Class::$version_option_name ) != TestPlugin_Class::$test_plugin_version ) {
+                TestPlugin_Class::activate_ops();
+            }
+        }
+
+        public function admin_menu() {
+            // load the admin file
+            global $test_plugin_admin;
+            if (empty($test_plugin_admin)) {
+                //require_once(TestPlugin_DIR.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'admin.php');
+                //check if class is defined, if not, instantiate it
+                $test_plugin_admin = new TestPlugin_Admin();
+            }
+        }
+
+        public static function incomplete_install_warning() {
+            //require_once(TestPlugin_DIR.DIRECTORY_SEPARATOR.'utility'.DIRECTORY_SEPARATOR.'utility_functions.php');
+            echo UtilityFunctions::noticeMessageHtml('The installation of the plugin "TestPlugin" is incomplete. Please re-install the plugin.',NoticeType::ERROR);
+        }
+
+        public static function isPluginPage() {
+            $isPluginPage = false;
+            $isPluginPage = is_page(TestPlugin_Class::$test_plugin_example_page_url);
+
+            return $isPluginPage;
+        }
+
+        public static function activate_ops() {
+            //ensure secure use
+            if (!current_user_can( 'activate_plugins') ){
+                return;
+            }
+            $plugin = isset( $_REQUEST['plugin'] ) ? $_REQUEST['plugin'] : '';
+            check_admin_referer( "deactivate-plugin_{$plugin}" );
+
+            global $wpdb;
+            require_once( ABSPATH . 'wp-admin'.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'upgrade.php' );
+
+            $installed_ver = get_option(TestPlugin_Class::$version_option_name);
+            $newInstall = !$installed_ver;//option doesn't exist and is "falsey," so this must be a new install
+
+            //now if the db hasn't been initialized -- a freshly installed plugin, do that here
+            if($newInstall) {
+                //create tables, data, etc
+                TestPlugin_Class::installOps();
+            }
+
+            add_option( TestPlugin_Class::$version_option_name, TestPlugin_Class::$test_plugin_version );//this wont replace an existing option
+
+            //now check if the version being installed differs than db
+            //if so, we need to modify the db/files/options to reflect the latest verison
+            $installed_ver = get_option(TestPlugin_Class::$version_option_name);
+
+            if ($installed_ver != TestPlugin_Class::$test_plugin_version) {//installed verison differs from the version this codebase is from -- so handle some incrimental updates
+                //do any manipulations here that happen for ANY new version after 1.0
+
+              if($newInstall || version_compare($installed_ver, '1.0.1', '<')) {//version >= 1.1.0
+                //do version specific code
+              }
+
+              update_option(TestPlugin_Class::$version_option_name, TestPlugin_Class::$test_plugin_version);
+              $installed_ver = get_option(TestPlugin_Class::$version_option_name);
+            }
+
+            error_log("************ Activated ".TestPlugin_Class::$pluginName." - Version: ".$installed_ver."   ************");
+        }
+
+        public static function deactivate_ops() {
+            //ensure secure use
+            if (!current_user_can( 'activate_plugins') ){
+                return;
+            }
+            $plugin = isset( $_REQUEST['plugin'] ) ? $_REQUEST['plugin'] : '';
+            check_admin_referer( "deactivate-plugin_{$plugin}" );
+
+            global $wpdb;
+            //do dactivate cleanup (do NOT delete db tables here, as user could reactivate plugin)
+
+            $installed_ver = get_option( TestPlugin_Class::$version_option_name );
+            error_log("************ Deactivated ".TestPlugin_Class::$pluginName." - Version: ".$installed_ver." ************");
+        }
+
+        public static function installOps() {
+            global $wpdb;
+
+            //register uninstall hook
+            //register_uninstall_hook( __FILE__, 'your_prefix_uninstall' );
+            register_uninstall_hook(__FILE__, array(__NAMESPACE__.'\\TestPlugin_Class', 'uninstallOps'));
+
+            error_log("************ Installed ".TestPlugin_Class::$pluginName." - Version: ".TestPlugin_Class::$test_plugin_version." ************");
+        }
+
+        public static function uninstallOps() {
+            global $wpdb;
+            if(!current_user_can('activate_plugins') ){
+                return;
+            }
+            check_admin_referer('bulk-plugins');
+
+            if(__FILE__!=WP_UNINSTALL_PLUGIN){
+                return;
+            }
+
+            $installed_ver = get_option( TestPlugin_Class::$version_option_name );
+            delete_option(TestPlugin_Class::$version_option_name);
+
+            //remove any db data, files, etc used by this plugin
+
+            error_log("************ Uninstalled ".TestPlugin_Class::$pluginName." - Version: ".$installed_ver." ************");
+        }
+
+        function enqueuePluginPageScriptsAndStyles() {
+            //array for passing php data to js
+            $globalArray = array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'pluginURL' => TestPlugin_URL,'siteURL' => site_url(),'uploadsURL'=> wp_upload_dir()['baseurl'] );
+
+            //load scripts and styles that apply to all pages related to the plugin
+            if(TestPlugin_Class::isPluginPage()) {
+                wp_enqueue_script('helper-js', TestPlugin_URL.'/js/helper.min.js', array(), false, true);
+                wp_localize_script('helper-js', 'GlobalJSData', $globalArray);
+                wp_enqueue_style('global-css', TestPlugin_URL.'/css/global.min.css',array(), false, false);
+            }
+
+            //load scripts and styles that pertain to a specific page
+            if(is_page(TestPlugin_Class::$test_plugin_example_page_url)) {
+                wp_enqueue_script('user-js', TestPlugin_URL.'/js/user.min.js', array('helper-js'), false, true);
+                wp_enqueue_style('user-css', TestPlugin_URL.'/css/user.min.css',array(), false, false);
+                wp_localize_script('user-js', 'GlobalJSData', $globalArray);
+            }
+        }
+    }
+}
+ ?>
