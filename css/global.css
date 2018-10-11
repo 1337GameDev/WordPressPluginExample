@@ -1,0 +1,50 @@
+/**** Notice Messages ****/
+/* Generic Notice Styles */
+.plugin_notice.success {
+    border-left-color: #46b450 !important;
+}
+
+.plugin_notice.alert {
+    border-left-color: #cc2b2b !important;
+}
+
+.plugin_notice {
+    display: none;
+    width: 90%;
+    height: 50px;
+    background: #fff;
+    border-left: 6px solid #fff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    padding: 0;
+    padding-left: 12px;
+    margin: 0 0 15px 0 !important;
+}
+
+.plugin_notice .notice_text{
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.plugin_notice > .close {
+    border: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #e5e5e5;
+    text-align: center;
+    display: inline-block;
+    float: right;
+    margin-right: -7px;
+    margin-top: -7px;
+}
+
+.plugin_notice > .close:hover {
+    cursor: pointer;
+    background: #c3c3c3;
+}
+
+.plugin_notice > p {
+    display: inline-block;
+}
