@@ -1,9 +1,10 @@
 # WordPressPluginExample
 An example plugin for WordPress, using good practices and [Composer](https://getcomposer.org/).
 
-WordPress            |  Composer
-:-------------------------:|:-------------------------:
-<img src="https://github.com/1337GameDev/WordPressPluginExample/blob/master/images/wordpress-logo.jpg?raw=true" width="100" height="100" style="display:inline-block;">  |  <img src="https://github.com/1337GameDev/WordPressPluginExample/blob/master/images/composer.png?raw=true" width="100" height="122" style="display:inline-block;">
+<p float="left">
+  <img src="https://github.com/1337GameDev/WordPressPluginExample/blob/master/images/wordpress-logo.jpg?raw=true" width="100" height="100" title="WordPress">
+<img src="https://github.com/1337GameDev/WordPressPluginExample/blob/master/images/composer.png?raw=true" width="100" height="122" title="Composer">
+</p>
 
 ## Structure
 * TestPlugin
