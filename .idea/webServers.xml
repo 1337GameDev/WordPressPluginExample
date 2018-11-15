@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3654a4fd-c9d8-4a24-b0ce-68967ec5665b" name="dev_wp" url="http://localhost:8888/wordpress">
+        <fileTransfer port="0" mountedRoot="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
