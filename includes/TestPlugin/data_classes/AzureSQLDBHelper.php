@@ -2,9 +2,9 @@
 class TestPlugin_AzureSQLDBHelper {
     private static $server = "tcp:resource-library.database.windows.net";
     private static $port = "1433";
-    private static $dbName = "ResourceLibrary";
-    private static $dbUser = "resourceLibraryAdmin18";
-    private static $dbUserPass = "bXy>vYKyg;GT";
+    private static $dbName = "";
+    private static $dbUser = "";
+    private static $dbUserPass = "";
 
     private static $dbConnection = NULL;
 
