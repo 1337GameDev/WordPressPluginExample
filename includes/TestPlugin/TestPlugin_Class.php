@@ -10,6 +10,7 @@ namespace TestPlugin {
     class TestPlugin_Class {
         public static $pluginName = "Test Plugin";
         public static $test_plugin_version = "1.0.0";
+        public static $test_plugin_db_version = "1.0.0";
         public static $test_db_table_prefix = "";//use this to "scope" your db tables when doing queries / storing data in custom tables
 
         public static $version_option_name = "test_plugin_db_version";
@@ -18,6 +19,7 @@ namespace TestPlugin {
         ];
 
         public static $templates;
+        public static $sqlLoader;
 
         public function __construct() {
             global $wpdb;
@@ -52,11 +54,11 @@ namespace TestPlugin {
             add_action('wp_enqueue_scripts', array(__NAMESPACE__.'\\TestPlugin_Class', 'enqueuePluginPageScriptsAndStyles') );
 
             //check db when plugin is loaded if the db needs to be updated (the activation hook isn't called when the plugin is upgraded)
-            TestPlugin_Class::update_db_check();
+            TestPlugin_Class::activate_plugin_check();
         }
 
-        public static function update_db_check() {
-            if ( get_option( TestPlugin_Class::$version_option_name ) != TestPlugin_Class::$test_plugin_version ) {
+        public static function activate_plugin_check() {
+            if (TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION) != TestPlugin_Class::$test_plugin_version ) {
                 TestPlugin_Class::activate_ops();
             }
         }
@@ -95,33 +97,63 @@ namespace TestPlugin {
 
             require_once( ABSPATH . 'wp-admin'.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'upgrade.php' );
 
-            $installed_ver = get_option(TestPlugin_Class::$version_option_name);
+            $installed_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
             $newInstall = !$installed_ver;//option doesn't exist and is "falsey," so this must be a new install
 
             //now if the db hasn't been initialized -- a freshly installed plugin, do that here
             if($newInstall) {
-                //create tables, data, etc
+                //do any plugin file manipulations
                 TestPlugin_Class::installOps();
             }
 
-            add_option( TestPlugin_Class::$version_option_name, TestPlugin_Class::$test_plugin_version );//this wont replace an existing option
+            TestPlugin_Options::addPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION, TestPlugin_Class::$test_plugin_version ); //this wont replace an existing option
 
             //now check if the version being installed differs than db
-            //if so, we need to modify the db/files/options to reflect the latest verison
-            $installed_ver = get_option(TestPlugin_Class::$version_option_name);
+            //if so, we need to modify the files/options to reflect the latest version
+            $installed_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
 
-            if ($installed_ver != TestPlugin_Class::$test_plugin_version) {//installed verison differs from the version this codebase is from -- so handle some incrimental updates
+            if ($installed_ver != TestPlugin_Class::$test_plugin_version ) {//installed version differs from the version this codebase is from -- so handle some incremental updates
                 //do any manipulations here that happen for ANY new version after 1.0
 
-              if($newInstall || version_compare($installed_ver, '1.0.1', '<')) {//version >= 1.1.0
+              if($newInstall || version_compare($installed_ver, '1.0.1', '<')) {//version > 1.0.1
                 //do version specific code
               }
-
-              update_option(TestPlugin_Class::$version_option_name, TestPlugin_Class::$test_plugin_version);
-              $installed_ver = get_option(TestPlugin_Class::$version_option_name);
+              TestPlugin_Options::setPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION, TestPlugin_Class::$test_plugin_version);
+              $installed_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
             }
 
+            TestPlugin_Class::db_update_ops();
+
             error_log("************ Activated ".TestPlugin_Class::$pluginName." - Version: ".$installed_ver."   ************");
+        }
+
+        public static function db_update_ops() {
+            $installed_db_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_DB_VERSION_OPTION);
+            $newInstall = !$installed_db_ver;//option doesn't exist and is "falsey," so this must be a new install
+
+            //now if the db hasn't been initialized -- a freshly installed plugin, do that here
+            if($newInstall) {
+                //create tables, data, etc
+                $tblSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_tables');
+                $dataSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_data');
+            }
+
+            TestPlugin_Options::addPluginOption(TestPlugin_Options::PLUGIN_DB_VERSION_OPTION, TestPlugin_Class::$test_plugin_db_version ); //this wont replace an existing option
+
+            //now check if the version being installed differs than db
+            //if so, we need to modify the db to reflect the latest version
+            $installed_db_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_DB_VERSION_OPTION);
+
+            if ($installed_db_ver != TestPlugin_Class::$test_plugin_db_version ) {//installed DB version differs from the version this codebase is from -- so handle some incremental updates
+                //do any manipulations here that happen for ANY new version after 1.0
+
+                if($newInstall || version_compare($installed_db_ver, '1.0.1', '<')) {//version > 1.0.1
+                    //do version specific code
+                }
+                TestPlugin_Options::setPluginOption(TestPlugin_Options::PLUGIN_DB_VERSION_OPTION, TestPlugin_Class::$test_plugin_db_version);
+                $installed_db_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_DB_VERSION_OPTION);
+            }
+
         }
 
         public static function deactivate_ops() {
@@ -135,7 +167,7 @@ namespace TestPlugin {
             global $wpdb;
             //do deactivate cleanup (do NOT delete db tables here, as user could reactivate plugin)
 
-            $installed_ver = get_option( TestPlugin_Class::$version_option_name );
+            $installed_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
             error_log("************ Deactivated ".TestPlugin_Class::$pluginName." - Version: ".$installed_ver." ************");
         }
 
@@ -159,10 +191,10 @@ namespace TestPlugin {
                 return;
             }
 
-            $installed_ver = get_option( TestPlugin_Class::$version_option_name );
-            delete_option(TestPlugin_Class::$version_option_name);
+            $installed_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
 
             //remove any db data, files, etc used by this plugin
+            TestPlugin_Options::removePluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
 
             error_log("************ Uninstalled ".TestPlugin_Class::$pluginName." - Version: ".$installed_ver." ************");
         }
