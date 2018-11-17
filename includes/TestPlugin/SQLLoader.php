@@ -90,6 +90,10 @@ namespace TestPlugin {
          * @return array an array of strings, the SQL statements of the file
          */
         public function fetchSql($fileName) {
+            if(!UtilityFunctions::stringEndsWith($fileName,'.sql') ) {
+                $fileName.='.sql';
+            }
+
             $sqlStatements = [];
 
             $delimiter = ';';
@@ -97,58 +101,66 @@ namespace TestPlugin {
             $isMultiLineComment = false;
             $sql = '';
             $row = '';
+            $filePath = $this->sqlFolder.DIRECTORY_SEPARATOR.$fileName;
             $file = NULL;
 
-            try {
-                $file = fopen($this->sqlFolder.DIRECTORY_SEPARATOR.$fileName, 'r');
-                while (!feof($file)) {
-                    $row = fgets($file);
+            if(file_exists($filePath) ) {
+                try {
+                    $file = fopen($filePath, 'r');
+                    while (!feof($file)) {
+                        $row = fgets($file);
 
-                    // remove BOM for utf-8 encoded file
-                    if ($isFirstRow) {
-                        $row = preg_replace('/^\x{EF}\x{BB}\x{BF}/', '', $row);
-                        $isFirstRow = false;
-                    }
-
-                    // 1. ignore empty string and comment row
-                    if (trim($row) == '' || preg_match('/^\s*(#|--\s)/sUi', $row)) {
-                        continue;
-                    }
-
-                    // 2. clear comments
-                    $row = trim(SQLLoader::removeComments($row, $isMultiLineComment));
-
-                    // 3. parse delimiter row
-                    if (preg_match('/^DELIMITER\s+[^ ]+/sUi', $row)) {
-                        $delimiter = preg_replace('/^DELIMITER\s+([^ ]+)$/sUi', '$1', $row);
-                        continue;
-                    }
-
-                    // 4. separate sql queries by delimiter
-                    $offset = 0;
-                    while (strpos($row, $delimiter, $offset) !== false) {
-                        $delimiterOffset = strpos($row, $delimiter, $offset);
-                        if (SQLLoader::isQuoted($delimiterOffset, $row)) {
-                            $offset = $delimiterOffset + strlen($delimiter);
-                        } else {
-                            $sql = trim($sql . ' ' . trim(substr($row, 0, $delimiterOffset)));
-                            $sqlStatements[] = $sql;
-
-                            $row = substr($row, $delimiterOffset + strlen($delimiter));
-                            $offset = 0;
-                            $sql = '';
+                        // remove BOM for utf-8 encoded file
+                        if ($isFirstRow) {
+                            $row = preg_replace('/^\x{EF}\x{BB}\x{BF}/', '', $row);
+                            $isFirstRow = false;
                         }
-                    }
-                    $sql = trim($sql . ' ' . $row);
-                }
-                if (strlen($sql) > 0) {
-                    $sqlStatements[] = $row;
-                }
 
-                fclose($file);
-            } catch (\Exception $e) {
-                UtilityFunctions::log_message("Error with handling SQL file: ".$file);
+                        // 1. ignore empty string and comment row
+                        if (trim($row) == '' || preg_match('/^\s*(#|--\s)/sUi', $row)) {
+                            continue;
+                        }
+
+                        // 2. clear comments
+                        $row = trim(SQLLoader::removeComments($row, $isMultiLineComment));
+
+                        // 3. parse delimiter row
+                        if (preg_match('/^DELIMITER\s+[^ ]+/sUi', $row)) {
+                            $delimiter = preg_replace('/^DELIMITER\s+([^ ]+)$/sUi', '$1', $row);
+                            continue;
+                        }
+
+                        // 4. separate sql queries by delimiter
+                        $offset = 0;
+                        while (strpos($row, $delimiter, $offset) !== false) {
+                            $delimiterOffset = strpos($row, $delimiter, $offset);
+                            if (SQLLoader::isQuoted($delimiterOffset, $row)) {
+                                $offset = $delimiterOffset + strlen($delimiter);
+                            } else {
+                                $sql = trim($sql . ' ' . trim(substr($row, 0, $delimiterOffset)));
+                                $sqlStatements[] = $sql;
+
+                                $row = substr($row, $delimiterOffset + strlen($delimiter));
+                                $offset = 0;
+                                $sql = '';
+                            }
+                        }
+                        $sql = trim($sql . ' ' . $row);
+                    }
+                    if (strlen($sql) > 0) {
+                        $sqlStatements[] = $row;
+                    }
+
+                    fclose($file);
+                } catch (\Exception $e) {
+                    UtilityFunctions::log_message("Error with handling SQL file: ".$file);
+                }
+            } else {
+                //file doesn't exist
+
             }
+
+
 
             //5. Replace placeholders in SQL file
             $sqlStatements = $this->applyPlaceholders($sqlStatements);

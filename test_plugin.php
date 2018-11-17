@@ -10,6 +10,7 @@
 
     $loader = require __DIR__.'/vendor/autoload.php';
     use TestPlugin\TestPlugin_Class;
+    use TestPlugin\UtilityFunctions;
 
     //disable external access
     if (!defined('ABSPATH')) {
@@ -48,5 +49,19 @@
     } else {
         //require_once(TestPlugin_DIR.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'class-test-plugin.php');
         $test_plugin_class = new TestPlugin_Class();
+
+        $tblSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_tables');
+        $dataSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_data');
+        //UtilityFunctions::log_message("\nTable Statements");
+        //UtilityFunctions::log_message("\n".implode("\n", $tblSqlStatements));
+        //UtilityFunctions::log_message("\nData Statements");
+        //UtilityFunctions::log_message("\n".implode("\n", $dataSqlStatements));
+
+        //UtilityFunctions::varDumpToPage($tblSqlStatements);
+        //UtilityFunctions::varDumpToPage($dataSqlStatements);
+        UtilityFunctions::log_message("\nTest 1");
+        UtilityFunctions::log_message("\nTest 2");
+        UtilityFunctions::log_message("\nTest 3");
+
     }
 

@@ -37,7 +37,7 @@
     content: '';
 }
 .miniloader:after {
-    background: #fff;
+    background: #f1f1f1;
     width: 75%;
     height: 75%;
     border-radius: 50%;

@@ -85,6 +85,7 @@ namespace TestPlugin {
         }
 
         public static function log_message($msg) {
+            error_log($msg);
             require_once(ABSPATH . 'wp-admin/includes/file.php');
             global $wp_filesystem;
             if ( ! is_a( $wp_filesystem, 'WP_Filesystem_Base') ){
@@ -94,11 +95,62 @@ namespace TestPlugin {
 
             $bt = debug_backtrace();
             $caller = array_shift($bt);
-            $wp_filesystem->put_contents(
-                TestPlugin_DIR.DIRECTORY_SEPARATOR.UtilityFunctions::$logFileName,
-                date("Y-m-d hh:ii A",time())." - ".$caller['file'].":".$caller['line']." - ".$msg,
+            $logStr = date("Y-m-d hh:ii A",time())." - ".$caller['file'].":".$caller['line']." - ".$msg;
+            $filePathStr = TestPlugin_DIR.DIRECTORY_SEPARATOR.UtilityFunctions::$logFileName;
+
+            $success = $wp_filesystem->put_contents(
+                $filePathStr,
+                $logStr,
                 FS_CHMOD_FILE // predefined mode settings for WP files
             );
+
+            if(!$success) {
+                error_log("Writing to file \"".$filePathStr."\" failed.");
+            } else {
+                error_log("Writing to file \"".$filePathStr."\" succeeded.");
+            }
+        }
+
+        public static function stringStartsWith($string, $subString, $caseSensitive = true) {
+            if ($caseSensitive === false) {
+                $string = mb_strtolower($string);
+                $subString  = mb_strtolower($subString);
+            }
+
+            if (mb_substr($string, 0, mb_strlen($subString)) == $subString) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        public static function stringEndsWith($string, $subString, $caseSensitive = true) {
+            if ($caseSensitive === false) {
+                $string = mb_strtolower($string);
+                $subString = mb_strtolower($subString);
+            }
+
+            $strlen = strlen($string);
+            $subStringLength = strlen($subString);
+
+            if ($subStringLength > $strlen) {
+                return false;
+            }
+
+            return substr_compare($string, $subString,$strlen - $subStringLength, $subStringLength) === 0;
+        }
+
+        public static function stringContains($haystack, $needle, $caseSensitive = true) {
+            if ($caseSensitive === false) {
+                $haystack = mb_strtolower($haystack);
+                $needle = mb_strtolower($needle);
+            }
+
+            if (mb_substr_count($haystack, $needle) > 0) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ namespace TestPlugin {
         public static $pluginName = "Test Plugin";
         public static $test_plugin_version = "1.0.0";
         public static $test_plugin_db_version = "1.0.0";
-        public static $test_db_table_prefix = "";//use this to "scope" your db tables when doing queries / storing data in custom tables
+        public static $test_db_table_prefix = "test_plugin_";//use this to "scope" your db tables when doing queries / storing data in custom tables
 
         public static $version_option_name = "test_plugin_db_version";
         public static $plugin_pages = [
@@ -23,8 +23,8 @@ namespace TestPlugin {
 
         public function __construct() {
             global $wpdb;
-            TestPlugin_Class::$test_db_table_prefix = $wpdb->prefix . 'test_plugin_';
             TestPlugin_Class::$templates = new Template(TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR."Templates");
+            TestPlugin_Class::$sqlLoader = new SQLLoader(TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'SQL',$wpdb->prefix.TestPlugin_Class::$test_db_table_prefix, $wpdb->get_charset_collate() );
 
             add_action( 'plugins_loaded', array($this,'initPlugin') );
         }
@@ -73,7 +73,9 @@ namespace TestPlugin {
         }
 
         public static function incomplete_install_warning() {
-            echo UtilityFunctions::noticeMessageHtml('The installation of the plugin "TestPlugin" is incomplete. Please re-install the plugin.',NoticeType::ERROR);
+            $msgStr = 'The installation of the plugin "TestPlugin" is incomplete. Please re-install the plugin.';
+            TestPlugin\UtilityFunctions::log_message($msgStr);
+            echo UtilityFunctions::noticeMessageHtml($msgStr, NoticeType::ERROR);
         }
 
         public static function isPluginPage() {
@@ -136,6 +138,10 @@ namespace TestPlugin {
                 //create tables, data, etc
                 $tblSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_tables');
                 $dataSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_data');
+
+                //UtilityFunctions::varDumpToPage($tblSqlStatements);
+                //UtilityFunctions::varDumpToPage($dataSqlStatements);
+
             }
 
             TestPlugin_Options::addPluginOption(TestPlugin_Options::PLUGIN_DB_VERSION_OPTION, TestPlugin_Class::$test_plugin_db_version ); //this wont replace an existing option
