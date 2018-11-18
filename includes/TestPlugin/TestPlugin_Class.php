@@ -21,10 +21,14 @@ namespace TestPlugin {
         public static $templates;
         public static $sqlLoader;
 
-        public function __construct() {
+        public function __construct($checkForOldData = false) {
             global $wpdb;
             TestPlugin_Class::$templates = new Template(TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR."Templates");
             TestPlugin_Class::$sqlLoader = new SQLLoader(TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'SQL',$wpdb->prefix.TestPlugin_Class::$test_db_table_prefix, $wpdb->get_charset_collate() );
+
+            if($checkForOldData) {
+                TestPlugin_Class::removePluginData();
+            }
 
             add_action( 'plugins_loaded', array($this,'initPlugin') );
         }
@@ -136,11 +140,7 @@ namespace TestPlugin {
             //now if the db hasn't been initialized -- a freshly installed plugin, do that here
             if($newInstall) {
                 //create tables, data, etc
-                $tblSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_tables');
-                $dataSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_data');
-
-                //UtilityFunctions::varDumpToPage($tblSqlStatements);
-                //UtilityFunctions::varDumpToPage($dataSqlStatements);
+                TestPlugin_Class::processDBUpdatePhase(['v1_tables','v1_tables_2'],'v1_constraints', 'v1_data');
 
             }
 
@@ -160,6 +160,17 @@ namespace TestPlugin {
                 $installed_db_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_DB_VERSION_OPTION);
             }
 
+        }
+
+        private static function processDBUpdatePhase($tblSqlFiles, $constraintSqlFiles, $dataSqlFiles){
+            $tblSqlArray = TestPlugin_Class::$sqlLoader->getSqlFileStatements($tblSqlFiles);
+            $constraintSqlArray = TestPlugin_Class::$sqlLoader->getSqlFileStatements($constraintSqlFiles);
+            $dataSqlArray = TestPlugin_Class::$sqlLoader->getSqlFileStatements($dataSqlFiles);
+
+
+            WPDataSource::dbDelta($tblSqlArray);
+            WPDataSource::queries($constraintSqlArray);
+            WPDataSource::queries($dataSqlArray);
         }
 
         public static function deactivate_ops() {
@@ -200,9 +211,18 @@ namespace TestPlugin {
             $installed_ver = TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
 
             //remove any db data, files, etc used by this plugin
-            TestPlugin_Options::removePluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
+            TestPlugin_Class::removePluginData();
 
             error_log("************ Uninstalled ".TestPlugin_Class::$pluginName." - Version: ".$installed_ver." ************");
+        }
+
+        public static function removePluginData() {
+            $uninstallSqlArray = TestPlugin_Class::$sqlLoader->getSqlFileStatements('uninstall');
+
+            WPDataSource::queries($uninstallSqlArray, false);
+
+            TestPlugin_Options::removePluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION);
+            TestPlugin_Options::removePluginOption(TestPlugin_Options::PLUGIN_DB_VERSION_OPTION);
         }
 
         public static function enqueuePluginPageScriptsAndStyles() {

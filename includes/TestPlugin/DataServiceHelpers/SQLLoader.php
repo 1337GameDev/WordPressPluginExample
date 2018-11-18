@@ -70,17 +70,36 @@ namespace TestPlugin {
          * @return boolean
          */
         public static function isQuoted($offset, $text) {
-            if ($offset > strlen($text))
+            if ($offset > strlen($text)) {
                 $offset = strlen($text);
+            }
 
             $isQuoted = false;
             for ($i = 0; $i < $offset; $i++) {
-                if ($text[$i] == "'")
+                if ($text[$i] == "'") {
                     $isQuoted = !$isQuoted;
-                if ($text[$i] == "\\" && $isQuoted)
+                }
+                if ($text[$i] == "\\" && $isQuoted) {
                     $i++;
+                }
             }
             return $isQuoted;
+        }
+
+        public function getSqlFileStatements($fileName) {
+            $resultStatements = [];
+
+            if(!empty($fileName)) {
+                if(is_array($fileName)) {
+                    foreach ($fileName as $file) {
+                        $resultStatements = array_merge($resultStatements, $this->fetchSql($file));
+                    }
+                } else {
+                    $resultStatements = $this->fetchSql($fileName);
+                }
+            }
+
+            return $resultStatements;
         }
 
         /**
@@ -89,7 +108,7 @@ namespace TestPlugin {
          * @param string path to a sql file (under the SQLFolder supplied for this object)
          * @return array an array of strings, the SQL statements of the file
          */
-        public function fetchSql($fileName) {
+        private function fetchSql($fileName) {
             if(!UtilityFunctions::stringEndsWith($fileName,'.sql') ) {
                 $fileName.='.sql';
             }
@@ -157,10 +176,7 @@ namespace TestPlugin {
                 }
             } else {
                 //file doesn't exist
-
             }
-
-
 
             //5. Replace placeholders in SQL file
             $sqlStatements = $this->applyPlaceholders($sqlStatements);

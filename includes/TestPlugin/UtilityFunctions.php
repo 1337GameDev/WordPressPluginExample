@@ -97,18 +97,14 @@ namespace TestPlugin {
             $caller = array_shift($bt);
             $logStr = date("Y-m-d hh:ii A",time())." - ".$caller['file'].":".$caller['line']." - ".$msg;
             $filePathStr = TestPlugin_DIR.DIRECTORY_SEPARATOR.UtilityFunctions::$logFileName;
+            $success = false;
 
-            $success = $wp_filesystem->put_contents(
-                $filePathStr,
-                $logStr,
-                FS_CHMOD_FILE // predefined mode settings for WP files
-            );
-
-            if(!$success) {
-                error_log("Writing to file \"".$filePathStr."\" failed.");
-            } else {
-                error_log("Writing to file \"".$filePathStr."\" succeeded.");
+            $file = fopen($filePathStr, "a+");//a for append -- could use a+ to create the file if it doesn't exist
+            if($file) {
+                $success = fwrite($file, "\n" . $logStr);
+                fclose($file);
             }
+
         }
 
         public static function stringStartsWith($string, $subString, $caseSensitive = true) {

@@ -11,6 +11,7 @@
     $loader = require __DIR__.'/vendor/autoload.php';
     use TestPlugin\TestPlugin_Class;
     use TestPlugin\UtilityFunctions;
+    use TestPlugin\WPDataSource;
 
     //disable external access
     if (!defined('ABSPATH')) {
@@ -32,6 +33,12 @@
         TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'UtilityFunctions.php',
         TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'BasicEnum.php',
         TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'NoticeType.php',
+        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'DataSource.php',
+        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'WPDataSource.php',
+        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'SQLLoader.php',
+        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'AzureBlobStorageHelper.php',
+        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'AzureSQLDBHelper.php'
+
     ];
 
     //loop through all files declared above and check their existence
@@ -47,21 +54,6 @@
         // Warn if the plugin install is incomplete - can happen if WP crashes (e.g. out of disk space) when upgrading the plugin
         add_action('all_admin_notices', array('TestPlugin\\TestPlugin_Class', 'incomplete_install_warning'));
     } else {
-        //require_once(TestPlugin_DIR.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'class-test-plugin.php');
         $test_plugin_class = new TestPlugin_Class();
-
-        $tblSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_tables');
-        $dataSqlStatements = TestPlugin_Class::$sqlLoader->fetchSql('v1_data');
-        //UtilityFunctions::log_message("\nTable Statements");
-        //UtilityFunctions::log_message("\n".implode("\n", $tblSqlStatements));
-        //UtilityFunctions::log_message("\nData Statements");
-        //UtilityFunctions::log_message("\n".implode("\n", $dataSqlStatements));
-
-        //UtilityFunctions::varDumpToPage($tblSqlStatements);
-        //UtilityFunctions::varDumpToPage($dataSqlStatements);
-        UtilityFunctions::log_message("\nTest 1");
-        UtilityFunctions::log_message("\nTest 2");
-        UtilityFunctions::log_message("\nTest 3");
-
     }
 
