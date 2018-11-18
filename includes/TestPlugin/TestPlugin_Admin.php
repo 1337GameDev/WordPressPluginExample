@@ -48,7 +48,7 @@ namespace TestPlugin {
 
         public static function adminPageHtml() {
             echo TestPlugin_Class::$templates->render( 'admin_page', array(
-                'pluginVersion' => get_option(TestPlugin_Class::$version_option_name)
+                'pluginVersion' => TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION)
             ));
         }
 

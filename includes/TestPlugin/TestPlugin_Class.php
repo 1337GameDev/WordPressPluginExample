@@ -13,7 +13,6 @@ namespace TestPlugin {
         public static $test_plugin_db_version = "1.0.0";
         public static $test_db_table_prefix = "test_plugin_";//use this to "scope" your db tables when doing queries / storing data in custom tables
 
-        public static $version_option_name = "test_plugin_db_version";
         public static $plugin_pages = [
             "testplugin_user_testpage"
         ];
@@ -99,6 +98,9 @@ namespace TestPlugin {
                 return;
             }
             $plugin = isset( $_REQUEST['plugin'] ) ? $_REQUEST['plugin'] : '';
+            //the below check fails, likely due to a wrong nonce name (or the nonce isn't available in this phase of the WordPress lifecycle)
+            //enabling this currently will make an endless loop as this check executes every "cycle" of WordPress. It has been disabled for now
+            
             //check_admin_referer( "activate-plugin_{$plugin}" );
 
             require_once( ABSPATH . 'wp-admin'.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'upgrade.php' );
