@@ -37,8 +37,8 @@ namespace TestPlugin {
             # Create admin page
             // Run earlier than default - hence earlier than other components
             // admin_menu runs earlier than other plugins
-            add_action('admin_menu', array($this, 'admin_menu'), 9);
-            add_action('admin_init', array($this, 'admin_menu'), 9);
+            add_action('admin_menu', array(__NAMESPACE__ .'\\TestPlugin_Admin', 'admin_menu'), 9);
+            add_action('admin_init', array(__NAMESPACE__ .'\\TestPlugin_Admin', 'admin_menu'), 9);
             //associate the activation hook
             register_activation_hook(__FILE__, array(__NAMESPACE__.'\\TestPlugin_Class', 'activate_ops'));
             //associate the deactivate hook
@@ -63,15 +63,6 @@ namespace TestPlugin {
         public static function activate_plugin_check() {
             if (TestPlugin_Options::getPluginOption(TestPlugin_Options::PLUGIN_VERSION_OPTION) != TestPlugin_Class::$test_plugin_version ) {
                 TestPlugin_Class::activate_ops();
-            }
-        }
-
-        public function admin_menu() {
-            // load the admin file
-            global $test_plugin_admin;
-            if (empty($test_plugin_admin)) {
-                //check if class is defined, if not, instantiate it
-                $test_plugin_admin = new TestPlugin_Admin();
             }
         }
 
@@ -100,7 +91,7 @@ namespace TestPlugin {
             $plugin = isset( $_REQUEST['plugin'] ) ? $_REQUEST['plugin'] : '';
             //the below check fails, likely due to a wrong nonce name (or the nonce isn't available in this phase of the WordPress lifecycle)
             //enabling this currently will make an endless loop as this check executes every "cycle" of WordPress. It has been disabled for now
-            
+
             //check_admin_referer( "activate-plugin_{$plugin}" );
 
             require_once( ABSPATH . 'wp-admin'.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'upgrade.php' );

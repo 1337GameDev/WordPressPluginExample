@@ -12,6 +12,15 @@ namespace TestPlugin {
             $this->admin_init();
         }
 
+        public static function admin_menu() {
+            // load the admin file
+            global $test_plugin_admin;
+            if (empty($test_plugin_admin)) {
+                //check if class is defined, if not, instantiate it
+                $test_plugin_admin = new TestPlugin_Admin();
+            }
+        }
+
         private function admin_init() {
             add_action('wp_before_admin_bar_render', array($this, 'wp_before_admin_bar_render'));
             add_action('admin_enqueue_scripts', array($this, 'admin_enqueue_scripts_and_styles'), 9999);
