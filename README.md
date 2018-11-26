@@ -18,7 +18,7 @@ An example plugin for WordPress, using good practices and [Composer](https://get
   * js - a folder for the plugin's JavaScript files
     * admin.js - JavaScript for use in admin areas of this plugin
     * user.js - JavaScript for use in user accessible areas of this plugin
-    * helper.js - JavaScript loaded in admin areas and user accessible areas of this plugin
+    * testplugin_helper.js - JavaScript loaded in admin areas and user accessible areas of this plugin
   * images - a folder to organize this plugin's images
   * vendor - composer's folder for dependencies it has downloaded
   * includes - a folder used for source files used by this plugin, namespace mapped via **composer.json**

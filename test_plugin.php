@@ -23,32 +23,7 @@
     define('TestPlugin\\TestPlugin_URL', plugins_url('', __FILE__));
     define('TestPlugin\\TestPlugin_SRC_DIR', TestPlugin\TestPlugin_DIR.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'TestPlugin');
 
-    //do incomplete plugin check
-    $files = [
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'TestPlugin_Admin.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'TestPlugin_AdminAjax.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'TestPlugin_UserAjax.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'TestPlugin_Class.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'TestPlugin_Options.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'UtilityFunctions.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'BasicEnum.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'NoticeType.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'DataSource.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'WPDataSource.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'SQLLoader.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'AzureBlobStorageHelper.php',
-        TestPlugin\TestPlugin_SRC_DIR.DIRECTORY_SEPARATOR.'DataServiceHelpers'.DIRECTORY_SEPARATOR.'AzureSQLDBHelper.php'
-
-    ];
-
-    //loop through all files declared above and check their existence
-    $allFilesPresent = false;
-    foreach ($files as $filePath) {
-        $allFilesPresent = file_exists($filePath);
-        if(!$allFilesPresent) {
-            break;
-        }
-    }
+    $allFilesPresent = TestPlugin_Class::do_incomplete_plugin_check();
 
     if (!$allFilesPresent) {
         // Warn if the plugin install is incomplete - can happen if WP crashes (e.g. out of disk space) when upgrading the plugin

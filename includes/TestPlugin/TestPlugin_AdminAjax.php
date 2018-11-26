@@ -4,7 +4,7 @@ namespace TestPlugin {
 
     class TestPlugin_AdminAjax
     {
-        function getTestAdminAjaxResponse()
+        public static function getTestAdminAjaxResponse()
         {
             //require_once(TestPlugin_DIR.DIRECTORY_SEPARATOR.'utility'.DIRECTORY_SEPARATOR.'utility_functions.php');
 

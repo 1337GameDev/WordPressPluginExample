@@ -148,5 +148,36 @@ namespace TestPlugin {
                 return false;
             }
         }
+
+        public static function intervalValueAs(\DateInterval $interval,  int $intervalType) {
+            $intervalValueAsSeconds = UtilityFunctions::dateIntervalToSeconds($interval);
+
+            $value = 0;
+            switch($intervalType) {
+                case IntervalType::SECONDS:
+                    $value = $intervalValueAsSeconds;
+                    break;
+                case IntervalType::MINUTES:
+                    $value = $intervalValueAsSeconds / 60;//secs in a minute
+                    break;
+                case IntervalType::HOURS:
+                    $value = $intervalValueAsSeconds / 3600;//secs in an hour
+                    break;
+                case IntervalType::DAYS:
+                    $value = $intervalValueAsSeconds / 86400;//secs in a day
+                    break;
+                default:
+                    break;
+            }
+
+            return $value;
+        }
+
+        public static function dateIntervalToSeconds($interval)
+        {
+            $seconds = $interval->days*86400 + $interval->h*3600
+                + $interval->i*60 + $interval->s;
+            return $interval->invert == 1 ? $seconds*(-1) : $seconds;
+        }
     }
 }

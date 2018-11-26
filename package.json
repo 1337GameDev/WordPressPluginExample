@@ -1,0 +1,16 @@
+{
+  "name": "wp_test_plugin",
+  "version": "1.0.0",
+  "description": "A test plugin for WordPress",
+  "main": "index.js",
+  "author": "RWD",
+  "license": "Proprietary",
+  "private": true,
+  "flat": true,
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.13",
+    "@webcomponents/webcomponentsjs": "^2.2.0",
+    "@types/jquery": "^3.3.22",
+    "jquery": "^3.3.1"
+  }
+}

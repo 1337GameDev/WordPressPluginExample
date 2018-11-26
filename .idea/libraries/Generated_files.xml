@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/admin/pages/testplugin_testplugin.min.js" />
+        <item url="file://$PROJECT_DIR$/js/admin/testplugin_admin.min.js" />
+        <item url="file://$PROJECT_DIR$/js/user/testplugin_user.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/admin.min.js" />
+      <root url="file://$PROJECT_DIR$/js/helper.min.js" />
+      <root url="file://$PROJECT_DIR$/js/admin/pages/testplugin_testplugin.min.js" />
+      <root url="file://$PROJECT_DIR$/js/admin/admin.min.js" />
+      <root url="file://$PROJECT_DIR$/js/user/user.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

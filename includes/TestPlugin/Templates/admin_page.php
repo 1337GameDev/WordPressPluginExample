@@ -33,9 +33,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-6">
-                    <?php
-
-                    ?>
+                    <test-component></test-component>
                 </div>
             </div>
         </div>
