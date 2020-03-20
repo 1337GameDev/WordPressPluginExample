@@ -1,5 +1,12 @@
 <?php
 namespace TestPlugin {
+    /**
+     * Class TestPlugin_Options
+     *
+     * A class that provides an interface for this plugin, to store/get plugin options uniquely to/from WordPress
+     *
+     * @package TestPlugin
+     */
     class TestPlugin_Options {
         private static $pluginOptionPrefix = "tp_option_";
 
@@ -8,6 +15,7 @@ namespace TestPlugin {
         const PLUGIN_VERSION_OPTION = "plugin_version";
         const PLUGIN_INTEGRITY_CHECK_TIMESTAMP_OPTION = "plugin_integrity_check_timestamp";
 
+        //uses the standard WordPress capability of 'edit_posts' to verify they are an admin
         public static function user_can_manage() {
             $user_can_manage = current_user_can('edit_posts');
             return $user_can_manage;
@@ -27,16 +35,16 @@ namespace TestPlugin {
             return get_option(TestPlugin_Options::$pluginOptionPrefix.$optionName);
         }
 
-        public static function setPluginOption($optionName, $newVal) {
-            update_option(TestPlugin_Options::$pluginOptionPrefix.$optionName, $newVal);
+        public static function setPluginOption($optionName, $newVal):bool {
+            return update_option(TestPlugin_Options::$pluginOptionPrefix.$optionName, $newVal);
         }
 
-        public static function addPluginOption($optionName, $newVal) {
-            add_option(TestPlugin_Options::$pluginOptionPrefix.$optionName, $newVal);
+        public static function addPluginOption($optionName, $newVal):bool {
+            return add_option(TestPlugin_Options::$pluginOptionPrefix.$optionName, $newVal);
         }
 
-        public static function removePluginOption($optionName) {
-            delete_option(TestPlugin_Options::$pluginOptionPrefix.$optionName);
+        public static function removePluginOption($optionName):bool {
+            return delete_option(TestPlugin_Options::$pluginOptionPrefix.$optionName);
         }
 
     }

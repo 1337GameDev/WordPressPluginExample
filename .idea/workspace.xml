@@ -2,451 +2,659 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ebf20f4-30cd-4972-abf7-fb7a7766621e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/angular-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarnrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/components/test-component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/user/pages/testplugin_testpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/user/user.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/user/user.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/CSSLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/JSLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/IntervalType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page_head_snippets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Templates/user_test_page_head_snippets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/admin/admin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/components/test-component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/.yarn-integrity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/closure-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/polymer-externs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/polymer-internal-shared-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/polymer-internal-types.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/webcomponents-externs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/array-selector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/custom-style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-bind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-if.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-repeat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/class.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/legacy-element-mixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/mutable-data-behavior.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/polymer-fn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/polymer.dom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/templatizer-behavior.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/dir-mixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/disable-upgrade-mixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/element-mixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/gesture-event-listeners.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/mutable-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/properties-changed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/properties-mixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/property-accessors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/property-effects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/strict-binding-parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/template-stamp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/array-splice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/async.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/boot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/case-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/debounce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/flattened-nodes-observer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/flush.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/gestures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/html-tag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/mixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/path.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/render-status.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/resolve-url.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/style-gather.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/templatize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/unresolved.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/polymer-element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@polymer/polymer/polymer-legacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/JQuery.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/JQueryStatic.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/dist/jquery.slim.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/legacy.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/misc.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/jquery/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/sizzle/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/sizzle/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/sizzle/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@types/sizzle/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/apply-shim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/apply-shim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/apply-shim.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/custom-style-interface.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/custom-style-interface.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/custom-style-interface.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/entrypoints/apply-shim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/entrypoints/custom-style-interface.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/entrypoints/scoping-shim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/externs/shadycss-externs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/scoping-shim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/scoping-shim.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/apply-shim-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/apply-shim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/common-regex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/common-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/css-parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/custom-style-interface.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/document-wait.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/document-watcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/scoping-shim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-cache.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-placeholder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-properties.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-transformer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/template-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/unscoped-style-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce-pf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce-pf.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/custom-elements-es5-adapter-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-bundle-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-ce-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-pf-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/webcomponents-bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/webcomponents-bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/webcomponents-loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/AUTHORS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/dist/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.slim.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/external/sizzle/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/external/sizzle/dist/sizzle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/external/sizzle/dist/sizzle.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax/jsonp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax/load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax/parseXML.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax/var/location.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax/var/nonce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax/var/rquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/ajax/xhr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/attributes/attr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/attributes/classes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/attributes/prop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/attributes/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/attributes/val.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/callbacks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/DOMEval.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/access.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/camelCase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/nodeName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/parseHTML.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/ready-no-deferred.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/ready.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/readyException.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/stripAndCollapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/toType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/core/var/rsingleTag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/addGetHookIf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/adjustCSS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/curCSS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/showHide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/var/cssExpand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/var/getStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/var/isHiddenWithinTree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/var/rboxStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/css/var/swap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/data/Data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/data/var/acceptData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/data/var/dataPriv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/data/var/dataUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/deferred.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/deferred/exceptionHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/deprecated.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/dimensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/effects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/effects/Tween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/effects/animatedSelector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/event/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/event/alias.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/event/focusin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/event/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/event/trigger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/exports/amd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/exports/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/buildFragment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/getAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/var/rcheckableType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/wrapMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/offset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/queue/delay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/selector-native.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/selector-sizzle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/selector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/serialize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/traversing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/traversing/findFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/traversing/var/dir.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/traversing/var/siblings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/ObjectFunctionString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/arr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/class2type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/concat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/documentElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/fnToString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/getProto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/hasOwn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/indexOf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/isFunction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/isWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/pnum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/push.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/rcssNum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/rnothtmlwhite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/slice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/var/toString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery/src/wrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/testplugin_helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/user/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/bootstrap-multiselect/bootstrap-multiselect.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/bootstrap-multiselect/bootstrap-multiselect.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/fontawesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/local/jquery-confirm/jquery-confirm.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/AjaxFunctionClasses/Pages/Admin/testplugin_AjaxFunctions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Certs/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/AjaxResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/AjaxResponseWithHTML.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/CSSResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/FileUploadHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/FileValidationOptions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/FileValidationResult.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/INIHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/JSONHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/JSResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/PageInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/PageManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/UploadException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/WPUploadHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/AWSHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/DBResult.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/FieldCondition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/PDOConnectionInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/PDOHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/ServiceHelpers/RDSHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/ServiceHelpers/S3Bucket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/ServiceHelpers/S3Helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/SessionHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/AccessLevel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/AgeGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ArchiveStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/Language.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/PopulationGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ProductLine.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/PublishStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/Resource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ResourceKeyword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ResourcePopulationGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ResourceTag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ResourceTopic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ResourceType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ResourceUserOption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/ResourceVersion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/Setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/StoredString.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/UserGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/UserOption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Classes/UserUserGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/ManyToMany.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/ModelBase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/ModelCache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/ModelDataHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/Referencable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Models/TestPluginModelDataHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/AccessLevel/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/AgeGroup/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ArchiveStatus/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/Language/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/PopulationGroup/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ProductLine/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/PublishStatus/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/Resource/search.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/Resource/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceKeyword/delete_all_keywords.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceKeyword/delete_keywords_not_in_list.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceKeyword/insert_using_multiple_strings.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceKeyword/insert_using_string.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceKeyword/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourcePopulationGroup/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceTag/delete_all_tags.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceTag/delete_keywords_not_in_list.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceTag/insert_using_multiple_strings.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceTag/insert_using_string.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceTag/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceTopic/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceType/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceUserOption/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/ResourceVersion/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/Role/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/Setting/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/StoredString/delete_unused.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/StoredString/get_unused.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/StoredString/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/User/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/UserGroup/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/UserOption/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Models/UserUserGroup/table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/Utility/get_resources_info.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/count.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/delete.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/insert_multiple.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/load.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/load_all.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/reset_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/update.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Templates/Pages/testplugin-user-page/testplugin_user_testpage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Templates/Pages/testplugin/test-plugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/TestPlugin/Templates/Pages/testplugin/test-tab-content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-upload/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-upload/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-upload/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-upload/src/ExifFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-upload/src/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-upload/src/Upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-util/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-util/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-util/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/lodev09/php-util/src/Util.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/admin/admin.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/admin/admin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/admin/pages/testplugin/testplugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/admin/pages/testplugin/testplugin.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/admin/pages/testplugin/testplugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/admin/pages/testplugin/testplugin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-private.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-private.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/GlobalWidgetSettings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/Helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/Interfaces.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/OptionsClasses.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/TypeChecker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Common_Widgets/css/Common_Widgets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/Helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/Helper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/Helper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/Helper.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/Helper.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/Helper.test.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/Helper.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/Helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/TypeChecker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/TypeChecker.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/TypeChecker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/TypeChecker.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/TypeChecker.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/TypeChecker.test.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/TypeChecker.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Classes/TypeChecker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Greenify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Greenify.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Greenify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Greenify.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Greenify.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Greenify.test.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Greenify.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Greenify.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/RunTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/RunTests.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/RunTests.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/RunTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Test/TestHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Test/TestHelper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Test/TestHelper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Test/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/Test/html/testDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/css/Greenify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/Greenify/css/Greenify.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/AJAX.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/AJAX.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/AJAX.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/AJAX.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/GlobalWPPluginData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/GlobalWPPluginData.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/GlobalWPPluginData.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/GlobalWPPluginData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/Helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/Helper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/Helper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/Helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/LocalizationHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/LocalizationHelper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/LocalizationHelper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/TypeChecker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/TypeChecker.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/TypeChecker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/TypeChecker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/WPAjaxPayload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/WPAjaxPayload.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/WPAjaxPayload.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Classes/WPAjaxPayload.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Localizations/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Localizations/es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/Localizations/qqq.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/TestPlugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/TestPlugin.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/TestPlugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/TestPlugin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/TestPlugin/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/Helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/Helper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/Helper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/Helper.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/Helper.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/Helper.test.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/Helper.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/Helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/TypeChecker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/TypeChecker.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/TypeChecker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/TypeChecker.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/TypeChecker.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/TypeChecker.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Classes/TypeChecker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/RunTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/RunTests.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/RunTests.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/RunTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Tabs.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Tabs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Tabs.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Tabs.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Tabs.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Tabs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Test/TestHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Test/TestHelper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Test/TestHelper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Test/TestHelper.min.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Test/TestHelper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Test/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/Test/html/testDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/css/Tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/css/Tabs.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/tabs/css/Tabs.min.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/css/testModule.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/css/testModule.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/sum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/sum.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/sum.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/sum.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/sum.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/sum.test.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/sum.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modules/testModule/sum.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/testplugin_helper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/testplugin_helper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/user/user.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/user/user.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/admin.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/admin.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/global.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/user.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/pages/testplugin_testplugin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/user.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/pages/testplugin_testplugin.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/admin/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/admin/admin.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/admin.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/admin/pages/testplugin_testplugin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/pages/testplugin/testplugin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/admin/pages/testplugin_testplugin.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/pages/testplugin/testplugin.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global/global.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/global.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/user/pages/testplugin_testpage.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/user/pages/testplugin_testpage.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/CSSLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/CSSLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/JSLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/JSLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/AzureBlobStorageHelper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/AzureSQLDBHelper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/DataSource.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/DataSource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/SQLLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/SQLLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/WPDataSource.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/WPDataSource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/uninstall.sql" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/SQL/uninstall.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/v1_constraints.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/v1_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/v1_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/SQL/v1_tables_2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page_head_snippets.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/Templates/Pages/testplugin/head_snippets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/TestPlugin/Templates/user_test_page_head_snippets.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/Templates/Pages/testplugin-user-page/head_snippets.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_AdminAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_AdminAjax.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Class.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Options.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Options.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/TestPlugin/UtilityFunctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/TestPlugin/UtilityFunctions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin/pages/testplugin_testplugin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/helper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/helper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/user.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/yuicompressor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yuicompressor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yuicompressor/build/yuicompressor-2.4.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yuicompressor/nodejs/cli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yuicompressor/nodejs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yuicompressor/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin/admin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin/pages/testplugin_testplugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin/pages/testplugin_testplugin.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/.yarn-integrity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/css/local/fontawesome/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/closure-types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/polymer-externs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/polymer-internal-shared-types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/polymer-internal-types.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/externs/webcomponents-externs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/interfaces.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/array-selector.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/array-selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/custom-style.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/custom-style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-bind.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-bind.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-if.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-if.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-module.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-repeat.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/elements/dom-repeat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/class.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/class.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/legacy-data-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/legacy-data-mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/legacy-element-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/legacy-element-mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/mutable-data-behavior.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/mutable-data-behavior.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/polymer-fn.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/polymer-fn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/polymer.dom.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/polymer.dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/templatizer-behavior.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/legacy/templatizer-behavior.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/dir-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/dir-mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/disable-upgrade-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/disable-upgrade-mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/element-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/element-mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/gesture-event-listeners.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/gesture-event-listeners.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/mutable-data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/mutable-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/properties-changed.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/properties-changed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/properties-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/properties-mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/property-accessors.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/property-accessors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/property-effects.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/property-effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/strict-binding-parser.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/strict-binding-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/template-stamp.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/mixins/template-stamp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/array-splice.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/array-splice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/async.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/boot.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/boot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/case-map.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/case-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/debounce.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/debounce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/flattened-nodes-observer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/flattened-nodes-observer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/flush.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/flush.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/gestures.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/gestures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/html-tag.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/html-tag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/path.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/render-status.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/render-status.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/resolve-url.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/resolve-url.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/settings.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/style-gather.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/style-gather.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/templatize.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/templatize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/unresolved.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/lib/utils/unresolved.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/polymer-element.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/polymer-element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/polymer-legacy.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@polymer/polymer/polymer-legacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/JQuery.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/JQueryStatic.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/dist/jquery.slim.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/legacy.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/misc.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/jquery/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/sizzle/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/sizzle/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/sizzle/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@types/sizzle/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/apply-shim.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/apply-shim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/apply-shim.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/custom-style-interface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/custom-style-interface.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/custom-style-interface.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/entrypoints/apply-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/entrypoints/custom-style-interface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/entrypoints/scoping-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/externs/shadycss-externs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/scoping-shim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/scoping-shim.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/apply-shim-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/apply-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/common-regex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/common-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/css-parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/custom-style-interface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/document-wait.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/document-watcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/scoping-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-properties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-transformer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/style-util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/template-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/src/unscoped-style-handler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce-pf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce-pf.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/custom-elements-es5-adapter-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-bundle-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-ce-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-pf-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/webcomponents-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/webcomponents-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/webcomponents-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/AUTHORS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/dist/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/dist/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/external/sizzle/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/external/sizzle/dist/sizzle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/external/sizzle/dist/sizzle.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax/jsonp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax/load.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax/parseXML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax/var/location.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax/var/nonce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax/var/rquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/ajax/xhr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/attributes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/attributes/attr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/attributes/classes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/attributes/prop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/attributes/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/attributes/val.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/callbacks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/DOMEval.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/access.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/camelCase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/nodeName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/parseHTML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/ready-no-deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/ready.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/readyException.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/stripAndCollapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/toType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/addGetHookIf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/adjustCSS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/curCSS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/showHide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/var/cssExpand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/var/getStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/var/isHiddenWithinTree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/var/rboxStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/css/var/swap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/data/Data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/data/var/acceptData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/data/var/dataPriv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/data/var/dataUser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/deferred/exceptionHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/deprecated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/dimensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/effects/Tween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/effects/animatedSelector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/event/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/event/alias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/event/focusin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/event/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/event/trigger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/exports/amd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/exports/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/buildFragment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/getAll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/var/rtagName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/manipulation/wrapMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/offset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/queue/delay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/selector-native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/selector-sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/serialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/traversing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/traversing/findFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/traversing/var/dir.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/traversing/var/siblings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/ObjectFunctionString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/arr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/class2type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/concat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/document.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/documentElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/fnToString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/getProto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/hasOwn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/indexOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/isFunction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/isWindow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/pnum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/push.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/rcssNum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/rnothtmlwhite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/slice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/var/toString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery/src/wrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/testplugin_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/testplugin_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/testplugin_helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/js/testplugin_helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/user/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/user/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/js/user/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/test_plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uninstall.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" executionDataType="PHAR" phpInterpreterId="802cafb3-e28f-4419-86bc-8004bb09aacb" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="802cafb3-e28f-4419-86bc-8004bb09aacb" />
+    </execution>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1004673793">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="2" />
-          <entry key="js" value="15" />
-          <entry key="json" value="5" />
-          <entry key="php" value="40" />
-          <entry key="sql" value="19" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="2" />
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="15" />
-          <entry key="PHP" value="40" />
-          <entry key="SQL" value="19" />
-          <entry key="composer.json" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="2" />
-          <entry key="js" value="26" />
-          <entry key="json" value="3" />
-          <entry key="php" value="3186" />
-          <entry key="sql" value="88" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="2" />
-          <entry key="JavaScript" value="26" />
-          <entry key="PHP" value="3186" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SQL" value="88" />
-          <entry key="composer.json" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.actions">
-        <counts>
-          <entry key="dump-autoload_from_ProjectViewPopup" value="8" />
-          <entry key="updateAll_from_ProjectViewPopup" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.command.options">
-        <counts>
-          <entry key="dump-autoload_with_--ansi_--classmap-authoritative_--no-interaction_--verbose" value="8" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-2073207220">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="17" />
-          <entry key="json" value="3" />
-          <entry key="php" value="1706" />
-          <entry key="ts" value="204" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="17" />
-          <entry key="JSON" value="3" />
-          <entry key="PHP" value="1706" />
-          <entry key="TypeScript" value="204" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="4" />
-          <entry key="js" value="6" />
-          <entry key="json" value="1" />
-          <entry key="php" value="19" />
-          <entry key="ts" value="13" />
-          <entry key="yarnrc" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="4" />
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="6" />
-          <entry key="PHP" value="19" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="TypeScript" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="TypeScriptServerServiceImpl" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.actions">
-        <counts>
-          <entry key="dump-autoload_from_ProjectViewPopup" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.command.options">
-        <counts>
-          <entry key="dump-autoload_with_--ansi_--classmap-authoritative_--no-interaction_--verbose" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="CSS File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>$version_option_name</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/includes</dir>
-    </dirStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
@@ -456,165 +664,71 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/Template.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/data_classes/AzureSQLDBHelper.php" />
-        <option value="$PROJECT_DIR$/css/admin.css" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/DataSource.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/WPDataSource.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/v1_tables_2.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/v1_tables.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/v1_constraints.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/uninstall.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQLLoader.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table1.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table3.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table1.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table2.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table3.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/v1_data.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table2.sql" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/Templates/user_test_page_head_snippets.php" />
-        <option value="$PROJECT_DIR$/css/test-component-styles.css" />
-        <option value="$PROJECT_DIR$/js/admin.js" />
-        <option value="$PROJECT_DIR$/js/helper.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/js/lib/@types/jquery/dist/jquery.slim.d.ts" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_AdminAjax.php" />
-        <option value="$PROJECT_DIR$/js/pages/testplugin.ts" />
-        <option value="$PROJECT_DIR$/js/user.ts" />
-        <option value="$PROJECT_DIR$/js/helper.ts" />
-        <option value="$PROJECT_DIR$/js/admin.ts" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page_head_snippets.php" />
-        <option value="$PROJECT_DIR$/css/user/pages/testplugin_testpage.css" />
-        <option value="$PROJECT_DIR$/css/admin/admin.css" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Admin.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/CSSLoader.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/JSLoader.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Options.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/IntervalType.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/UtilityFunctions.php" />
-        <option value="$PROJECT_DIR$/test_plugin.php" />
-        <option value="$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Class.php" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/js/lib/@polymer/polymer/package.json" />
-      <path value="$PROJECT_DIR$/js/lib/@types/jquery/package.json" />
-      <path value="$PROJECT_DIR$/js/lib/@types/sizzle/package.json" />
-      <path value="$PROJECT_DIR$/js/lib/@webcomponents/shadycss/package.json" />
-      <path value="$PROJECT_DIR$/js/lib/@webcomponents/webcomponentsjs/package.json" />
-      <path value="$PROJECT_DIR$/js/lib/jquery/package.json" />
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1.22">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="/Applications/MAMP/htdocs/wordpress" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State />
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>Naming conventionsJavaScript</id>
-          </State>
-          <State>
-            <id>Naming conventionsPHP</id>
-          </State>
-          <State>
-            <id>PHP</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="WordPressPluginExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WordPressPluginExample" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1PGT0gQvXlha5sUV45sBGwSwM4A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dumpAutoload /Users/richardduerr/Documents/git_repos/WordPressPluginExample/composer.json" value="--no-interaction --ansi --verbose --classmap-authoritative" />
     <property name="dumpAutoload /Users/richardduerr/Repos/git/WordPressPluginExample/composer.json" value="--no-interaction --ansi --verbose --classmap-authoritative" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/fallbacks" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Downloads/reslib/reslib/plugins/ResourceLibrary/includes/ResourceLibrary/Models/ModelBase.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js/user" />
-      <recent name="$PROJECT_DIR$/js/admin" />
-      <recent name="$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers" />
-      <recent name="$PROJECT_DIR$/includes/TestPlugin/SQL" />
-      <recent name="$PROJECT_DIR$/includes/TestPlugin/SQL/1" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/includes/TestPlugin" />
-      <recent name="$PROJECT_DIR$/includes/TestPlugin/ContentHelpers" />
-      <recent name="$PROJECT_DIR$/includes/TestPlugin/Templates" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/js/componenets" />
+      <recent name="$PROJECT_DIR$/js/fallbacks" />
+      <recent name="$PROJECT_DIR$/includes/TestPlugin/Templates/Pages/user/testpluginuser" />
+      <recent name="$PROJECT_DIR$/js/user/pages" />
+      <recent name="$PROJECT_DIR$/includes/TestPlugin/AjaxFunctionClasses/Pages/User" />
+      <recent name="$PROJECT_DIR$/js/modules/TestPlugin/Contexts/user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css/local/tagsinput" />
+      <recent name="$PROJECT_DIR$/css/local" />
+      <recent name="$PROJECT_DIR$/includes/TestPlugin/Templates/Pages/admin" />
+      <recent name="$PROJECT_DIR$/includes/TestPlugin/Templates/Pages/user" />
+      <recent name="$PROJECT_DIR$/js/modules/TestPlugin/Contexts/admin" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager">
+    <configuration name="Mocha" type="NodeJSConfigurationType" application-parameters="-r ts-node/register -r ignore-styles js/modules/Tabs/RunTests.ts" path-to-js-file="js/lib/mocha/bin/_mocha" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -635,392 +749,346 @@
       <workItem from="1542414201361" duration="146000" />
       <workItem from="1542414380264" duration="24946000" />
       <workItem from="1542599981039" duration="11848000" />
-      <workItem from="1542867616822" duration="23689000" />
+      <workItem from="1542867616822" duration="34924000" />
+      <workItem from="1543554355462" duration="332000" />
+      <workItem from="1543554790750" duration="17732000" />
+      <workItem from="1544504775176" duration="12208000" />
+      <workItem from="1545023513479" duration="41000" />
+      <workItem from="1545023579766" duration="25650000" />
+      <workItem from="1546443790819" duration="753000" />
+      <workItem from="1546490994630" duration="944000" />
+      <workItem from="1546492725337" duration="2827000" />
+      <workItem from="1546659160746" duration="549000" />
+      <workItem from="1546666672715" duration="4303000" />
+      <workItem from="1546711245503" duration="8177000" />
+      <workItem from="1546918401470" duration="5881000" />
+      <workItem from="1547011167611" duration="3000" />
+      <workItem from="1547011400623" duration="840000" />
+      <workItem from="1547012286045" duration="511000" />
+      <workItem from="1547089070344" duration="1155000" />
+      <workItem from="1547090287486" duration="701000" />
+      <workItem from="1547091013933" duration="3828000" />
+      <workItem from="1547177384197" duration="68000" />
+      <workItem from="1547177488841" duration="3095000" />
+      <workItem from="1547267683907" duration="7938000" />
+      <workItem from="1547532044165" duration="2738000" />
+      <workItem from="1547786942498" duration="760000" />
+      <workItem from="1547875620125" duration="23894000" />
+      <workItem from="1548731823888" duration="1178000" />
+      <workItem from="1548738295081" duration="3269000" />
+      <workItem from="1548821507243" duration="7574000" />
+      <workItem from="1550636794048" duration="1515000" />
+      <workItem from="1553407251147" duration="94000" />
+      <workItem from="1553407404132" duration="138000" />
+      <workItem from="1553655525250" duration="101000" />
+      <workItem from="1555303526471" duration="465000" />
+      <workItem from="1555304149800" duration="27000" />
+      <workItem from="1555304309790" duration="58000" />
+      <workItem from="1555742094267" duration="152000" />
+      <workItem from="1555742323781" duration="15000" />
+      <workItem from="1556337963047" duration="1090000" />
+      <workItem from="1556339294808" duration="3932000" />
+      <workItem from="1557370703053" duration="12188000" />
+      <workItem from="1558498208486" duration="10178000" />
+      <workItem from="1561089252025" duration="63000" />
+      <workItem from="1561089523049" duration="8130000" />
+      <workItem from="1565499222633" duration="120000" />
+      <workItem from="1565499377609" duration="7574000" />
+      <workItem from="1569902977675" duration="602000" />
+      <workItem from="1569904093536" duration="273000" />
+      <workItem from="1573521760837" duration="65000" />
+      <workItem from="1573522032688" duration="56000" />
+      <workItem from="1576122928670" duration="17000" />
+      <workItem from="1576122991634" duration="19000" />
+      <workItem from="1576123124902" duration="271000" />
+      <workItem from="1576123842137" duration="41206000" />
+      <workItem from="1577680767935" duration="226000" />
+      <workItem from="1577681016378" duration="10547000" />
+      <workItem from="1577932913580" duration="28670000" />
+      <workItem from="1578288077525" duration="7618000" />
+      <workItem from="1578376746706" duration="18554000" />
+      <workItem from="1579062158662" duration="9262000" />
+      <workItem from="1579574864134" duration="50122000" />
+      <workItem from="1580962954546" duration="11341000" />
+      <workItem from="1581909210496" duration="13998000" />
+      <workItem from="1582261170985" duration="5380000" />
+      <workItem from="1583120303555" duration="65677000" />
+      <workItem from="1584589976147" duration="1226000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76536000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3013595" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" sideWeight="0.49924472" visible="true" weight="0.3295129" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4939577" weight="0.32808024" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49697885" weight="0.32808024" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49471298" weight="0.32808024" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49773413" weight="0.32808024" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007553" side_tool="true" visible="true" weight="0.3295129" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="13" sideWeight="0.49928468" weight="0.32891566" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$USER_HOME$/Downloads/testPlugin/js/pages/testplugin.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/https.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/ChoiceButton.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/StaticThis.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/DynamicObject.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/GlobalWidgetSettings.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/TimedAction.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/SingleEditField.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/OptionsClasses.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/SingleEditField.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/DynamicObject.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/TypeChecker.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/VisibilityToggle.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/VisibilityToggle.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/TimedAction.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/TypeChecker.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/ChoiceButton.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/OptionsClasses.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/StaticThis.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/GlobalWidgetSettings.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/BrowserDetect.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/BrowserDetect.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Tabs/Tabs.test.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/LocalizationHelper.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/FileDropArea.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/FileDropArea.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/Interfaces.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/VisibilityToggle.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/TimedAction.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/WidgetBase.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/TypeChecker.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/ElementGeneratorHelper.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Tabs/Classes/Helper.test.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/TypeChecker.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/LoaderUIHelper.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/ChoiceButton.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/StaticThis.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Greenify/Test/TestHelper.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/WidgetBase.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/GlobalWPPluginData.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/GlobalWidgetSettings.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Greenify/Test/TestHelper.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/OptionsClasses.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Tabs/Tabs.test.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/ChoiceButton.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Tabs/Classes/TypeChecker.test.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/FileDropArea.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Greenify/RunTests.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/Interfaces.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/VisibilityToggle.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/DynamicObject.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/StaticThis.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/Helper.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/Interfaces.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/DynamicObject.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Tabs/RunTests.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/DynamicObject.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/Interfaces.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Tabs/RunTests.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/TimedAction.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Greenify/RunTests.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/Interfaces.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/SingleEditField.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Common_Widgets.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/SingleEditField.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Greenify/Greenify.test.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/FileDropArea.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/GlobalWidgetSettings.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/OptionsClasses.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Classes/Helper.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/TypeChecker.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Greenify/Greenify.test.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/ContextHelper.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/LoaderUIHelper.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/WidgetBase.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Common_Widgets.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/ContextHelper.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Common_Widgets/Common_Widgets.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/IndicatorUIHelper.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/DynamicObject.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Tabs/Classes/Helper.test.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/LocalizationHelper.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/AJAX.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/Helper.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/LocalizationHelper.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/LocalizationHelper.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/WidgetBase.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/GlobalWPPluginData.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/TypeChecker.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/Helper.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/IndicatorUIHelper.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/AJAX.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Common_Widgets.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/Tabs/Classes/TypeChecker.test.js" />
+        <option value="$PROJECT_DIR$/js/modules/Common_Widgets/Classes/Interfaces.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/Helper.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/Helper.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Contexts/user/testpluginuser_Context.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Contexts/user/testpluginuser_Context.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/https.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/http.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/urn.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/urn.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/http.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/https.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/mailto.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/mailto.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/urn-uuid.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/schemes/urn-uuid.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/uri.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/uri.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/regexps-uri.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Contexts/user/testpluginuser_Context.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/regexps-iri.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Contexts/user/testpluginuser_Context.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/index.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/util.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/regexps-iri.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/util.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/index.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/lib/uri-js/src/regexps-uri.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/BrowserDetect.js.map" />
+        <option value="$PROJECT_DIR$/js/admin/pages/testplugin/testplugin.js" />
+        <option value="$PROJECT_DIR$/js/admin/pages/testplugin/testplugin.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/ContextHelper.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/Interfaces.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/WPAjaxResponse.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/LoaderUIHelper.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/LoaderUIHelper.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/WPAjaxResponse.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/BrowserDetect.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/DynamicObject.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/WPAjaxResponse.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/WPAjaxPayload.js" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/IndicatorUIHelper.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/WPAjaxResponse.js.map" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/WPAjaxPayload.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/DynamicObject.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/Interfaces.js" />
+        <option value="$PROJECT_DIR$/js/modules/TestPlugin/Classes/ElementGeneratorHelper.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/ContextHelper.js.map" />
+        <option value="/Applications/MAMP/htdocs/wordpress/wp-content/plugins/testPlugin/js/modules/TestPlugin/Classes/IndicatorUIHelper.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/regexps-uri.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/index.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/util.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/regexps-iri.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/util.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/index.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/regexps-iri.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/regexps-uri.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/uri.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/uri.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/urn-uuid.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/urn-uuid.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/mailto.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/mailto.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/https.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/http.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/urn.js" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/urn.js.map" />
+        <option value="$PROJECT_DIR$/js/lib/uri-js/src/schemes/http.js.map" />
       </list>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="42" y="49" key="#Notifications" timestamp="1576731467919">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="42" y="49" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1576731467919" />
+    <state x="496" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1583537028468">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="496" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1583537028468" />
+    <state x="130" y="119" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584589914640">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="130" y="119" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1584589914640" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580449705092">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1580449705092" />
+    <state x="167" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583808367239">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="167" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1583808367239" />
+    <state x="488" y="280" key="ComposerDumpAutoloadDialog" timestamp="1581129600437">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="280" key="ComposerDumpAutoloadDialog/0.0.1366.768@0.0.1366.768" timestamp="1581129600437" />
+    <state x="16" y="95" width="827" height="568" key="DiffContextDialog" timestamp="1576728891171">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="16" y="95" width="827" height="568" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1576473807846" />
+    <state x="16" y="95" width="827" height="568" key="DiffContextDialog/0.23.1366.745@0.23.1366.745" timestamp="1576728891171" />
+    <state width="597" height="185" key="GridCell.Tab.0.bottom" timestamp="1578287945279">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="597" height="185" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578287945279" />
+    <state width="597" height="185" key="GridCell.Tab.0.center" timestamp="1578287945275">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="597" height="185" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578287945275" />
+    <state width="597" height="185" key="GridCell.Tab.0.left" timestamp="1578287945274">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="597" height="185" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578287945274" />
+    <state width="597" height="185" key="GridCell.Tab.0.right" timestamp="1578287945276">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="597" height="185" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578287945276" />
+    <state x="192" y="23" key="SettingsEditor" timestamp="1583537122589">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="192" y="23" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1583537122589" />
+    <state x="192" y="35" key="SettingsEditor/0.23.1366.745@0.23.1366.745" timestamp="1576123380256" />
+    <state x="123" y="146" width="639" height="486" key="find.popup" timestamp="1584672938230">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="123" y="146" width="639" height="486" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1584672938230" />
+    <state x="348" y="92" width="670" height="676" key="search.everywhere.popup" timestamp="1579664304748">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="348" y="92" width="670" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1579664304748" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>/Applications/MAMP/htdocs/wordpress</wordpressPath>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/v1_constraints.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uninstall.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/uninstall.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/v1_tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/v1_tables_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/delete_table1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/insert_table2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/SQL/v1_data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/AzureBlobStorageHelper.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/AzureSQLDBHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/DataSource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/WPDataSource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/helper.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/test-component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/test-component-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/TestPlugin_UserAjax.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/TestPlugin_AdminAjax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.yarnrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/testplugin_helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/pages/testplugin_testplugin.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/pages/testplugin_testplugin.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/user/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/testplugin_helper.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/user/user.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/DataServiceHelpers/SQLLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="127" column="50" selection-start-line="127" selection-start-column="50" selection-end-line="127" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/user/pages/testplugin_testpage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/admin/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/Templates/admin_page_head_snippets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/Templates/user_test_page_head_snippets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/@types/jquery/dist/jquery.slim.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/admin.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="84" column="79" selection-start-line="84" selection-start-column="79" selection-end-line="84" selection-end-column="79" />
-          <folding>
-            <element signature="e#33#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/NoticeType.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/IntervalType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Options.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/UtilityFunctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2265">
-          <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="e#222#254#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/CSSLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/ContentHelpers/JSLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/TestPlugin/TestPlugin_Class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1051">
-          <caret line="277" column="36" selection-start-line="277" selection-start-column="36" selection-end-line="277" selection-end-column="36" />
-          <folding>
-            <element signature="e#33#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/modules/Tabs/Tabs.test.ts</url>
+          <line>113</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/modules/Tabs/Tabs.ts</url>
+          <line>162</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

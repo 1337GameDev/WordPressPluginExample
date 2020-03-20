@@ -24,6 +24,9 @@ import * as ApplyShimUtils from './apply-shim-utils.js';
 import {updateNativeProperties, detectMixin} from './common-utils.js';
 import {CustomStyleInterfaceInterface} from './custom-style-interface.js'; // eslint-disable-line no-unused-vars
 
+/** @type {!Object<string, string>} */
+const adoptedCssTextMap = {};
+
 /**
  * @const {StyleCache}
  */
@@ -93,7 +96,7 @@ export default class ScopingShim {
       is: elementName,
       extends: typeExtension,
     };
-    let cssText = this._gatherStyles(template);
+    let cssText = this._gatherStyles(template) + (adoptedCssTextMap[elementName] || '');
     // check if the styling has mixin definitions or uses
     this._ensure();
     if (!optimalBuild) {
@@ -116,6 +119,14 @@ export default class ScopingShim {
       template._style = style;
     }
     template._ownPropertyNames = ownPropertyNames;
+  }
+
+  /**
+   * @param {!Array<string>} cssTextArray
+   * @param {string} elementName
+   */
+  prepareAdoptedCssText(cssTextArray, elementName) {
+    adoptedCssTextMap[elementName] = cssTextArray.join(' ');
   }
   /**
    * Prepare template for the given element type
@@ -146,17 +157,15 @@ export default class ScopingShim {
     return null;
   }
   _prepareHost(host) {
-    let {is, typeExtension} = StyleUtil.getIsExtends(host);
-    let placeholder = getStylePlaceholder(is)
-    let template = templateMap[is];
-    let ast;
-    let ownStylePropertyNames;
-    let cssBuild;
-    if (template) {
-      ast = template['_styleAst'];
-      ownStylePropertyNames = template._ownPropertyNames;
-      cssBuild = StyleUtil.getCssBuild(template);
+    const {is, typeExtension} = StyleUtil.getIsExtends(host);
+    const placeholder = getStylePlaceholder(is);
+    const template = templateMap[is];
+    if (!template) {
+      return;
     }
+    const ast = template['_styleAst'];
+    const ownStylePropertyNames = template._ownPropertyNames;
+    const cssBuild = StyleUtil.getCssBuild(template);
     const styleInfo = new StyleInfo(
       ast,
       placeholder,
@@ -165,10 +174,7 @@ export default class ScopingShim {
       typeExtension,
       cssBuild
     );
-    // only set the style info after this element has registered its template
-    if (template) {
-      StyleInfo.set(host, styleInfo);
-    }
+    StyleInfo.set(host, styleInfo);
     return styleInfo;
   }
   _ensureApplyShim() {
@@ -235,9 +241,10 @@ export default class ScopingShim {
    * @param {Object=} overrideProps
    */
   styleElement(host, overrideProps) {
-    let styleInfo = StyleInfo.get(host);
+    const styleInfo = StyleInfo.get(host) || this._prepareHost(host);
+    // if there is no style info at this point, bail
     if (!styleInfo) {
-      styleInfo = this._prepareHost(host);
+      return;
     }
     // Only trip the `elementsHaveApplied` flag if a node other that the root document has `applyStyle` called
     if (!this._isRootOwner(host)) {
@@ -305,10 +312,10 @@ export default class ScopingShim {
     }
   }
   _styleOwnerForNode(node) {
-    let root = node.getRootNode();
+    let root = StyleUtil.wrap(node).getRootNode();
     let host = root.host;
     if (host) {
-      if (StyleInfo.get(host)) {
+      if (StyleInfo.get(host) || this._prepareHost(host)) {
         return host;
       } else {
         return this._styleOwnerForNode(host);
@@ -340,6 +347,13 @@ export default class ScopingShim {
     let owner = this._styleOwnerForNode(host);
     let ownerStyleInfo = StyleInfo.get(owner);
     let ownerProperties = ownerStyleInfo.styleProperties;
+    // style owner has not updated properties yet
+    // go up the chain and force property update,
+    // except if the owner is the document
+    if (owner !== this._documentOwner && !ownerProperties) {
+      this._updateProperties(owner, ownerStyleInfo);
+      ownerProperties = ownerStyleInfo.styleProperties;
+    }
     let props = Object.create(ownerProperties || null);
     let hostAndRootProps = StyleProperties.hostAndRootPropertiesForScope(host, styleInfo.styleRules, styleInfo.cssBuild);
     let propertyData = StyleProperties.propertyDataFromStyles(ownerStyleInfo.styleRules, host);
@@ -379,7 +393,8 @@ export default class ScopingShim {
    * @param {Object=} properties
    */
   styleSubtree(host, properties) {
-    let root = host.shadowRoot;
+    const wrappedHost = StyleUtil.wrap(host);
+    let root = wrappedHost.shadowRoot;
     if (root || this._isRootOwner(host)) {
       this.styleElement(host, properties);
     }
@@ -393,7 +408,7 @@ export default class ScopingShim {
       }
     } else {
       // process the lightdom children of `host`
-      let children = host.children || host.childNodes;
+      let children = wrappedHost.children || wrappedHost.childNodes;
       if (children) {
         for (let i = 0; i < children.length; i++) {
           let c = /** @type {!HTMLElement} */(children[i]);
@@ -472,7 +487,7 @@ export default class ScopingShim {
   // the element's class with the provided classString and adds
   // any necessary ShadyCSS static and property based scoping selectors
   setElementClass(element, classString) {
-    let root = element.getRootNode();
+    let root = StyleUtil.wrap(element).getRootNode();
     let classes = classString ? classString.split(/\s/) : [];
     let scopeName = root.host && root.host.localName;
     // If no scope, try to discover scope name from existing class.
@@ -552,6 +567,7 @@ ScopingShim.prototype['scopeNode'] = ScopingShim.prototype.scopeNode;
 ScopingShim.prototype['unscopeNode'] = ScopingShim.prototype.unscopeNode;
 ScopingShim.prototype['scopeForNode'] = ScopingShim.prototype.scopeForNode;
 ScopingShim.prototype['currentScopeForNode'] = ScopingShim.prototype.currentScopeForNode;
+ScopingShim.prototype['prepareAdoptedCssText'] = ScopingShim.prototype.prepareAdoptedCssText;
 /* eslint-enable no-self-assign */
 Object.defineProperties(ScopingShim.prototype, {
   'nativeShadow': {

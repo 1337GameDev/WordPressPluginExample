@@ -1,5 +1,16 @@
 <?php
 namespace TestPlugin {
+    /**
+     * Class BasicEnum
+     * Because PHP doesn't natively support enums, this was made.
+     * Subclass this to make new enum types
+     *
+     * This was made from a comment made by the user "mohanrajnr at gmail dot com"
+     *
+     * https://www.php.net/manual/en/class.splenum.php
+     *
+     * @package TestPlugin
+     */
     abstract class BasicEnum
     {
         private static $constCacheArray = NULL;
@@ -22,8 +33,7 @@ namespace TestPlugin {
             return self::$constCacheArray[$calledClass];
         }
 
-        public static function isValidName($name, $strict = false)
-        {
+        public static function isValidName($name, $strict = false) {
             $constants = self::getConstants();
 
             if ($strict) {
@@ -34,8 +44,7 @@ namespace TestPlugin {
             return in_array(strtolower($name), $keys);
         }
 
-        public static function isValidValue($value)
-        {
+        public static function isValidValue($value) {
             $values = array_values(self::getConstants());
             return in_array($value, $values, $strict = true);
         }

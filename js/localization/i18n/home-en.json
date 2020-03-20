@@ -1,0 +1,12 @@
+{
+  "@metadata": {
+    "authors": [
+      "Author"
+    ],
+    "last-updated": "2019-01-16",
+    "locale": "en",
+    "message-documentation": "string-doc"
+  },
+  "appname-title": "Example Application",
+  "teststring2": "EN Translated"
+}

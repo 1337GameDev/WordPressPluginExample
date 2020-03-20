@@ -1,0 +1,11 @@
+{
+  "@metadata": {
+    "authors": [
+      "Author"
+    ],
+    "last-updated": "2019-01-16",
+    "locale": "fr",
+    "message-documentation": "string-doc"
+  },
+  "all-pages-message": "Certaines pages ne sont pas disponibles en plusieurs langues"
+}

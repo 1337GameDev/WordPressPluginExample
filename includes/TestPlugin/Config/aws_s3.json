@@ -1,0 +1,10 @@
+{
+  "buckets": [
+    {
+      "name": "",
+      "default_dir": "uploads",
+      "file_prefix": "prefix_",
+      "primary": true
+    }
+  ]
+}

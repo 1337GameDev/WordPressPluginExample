@@ -238,6 +238,11 @@ export function setElementClassRaw(element, value) {
 }
 
 /**
+ * @type {function(*):*}
+ */
+export const wrap = window['ShadyDOM'] && window['ShadyDOM']['wrap'] || ((node) => node);
+
+/**
  * @param {Element | {is: string, extends: string}} element
  * @return {{is: string, typeExtension: string}}
  */

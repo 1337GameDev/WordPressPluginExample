@@ -29,6 +29,7 @@
         // Warn if the plugin install is incomplete - can happen if WP crashes (e.g. out of disk space) when upgrading the plugin
         add_action('all_admin_notices', array('TestPlugin\\TestPlugin_Class', 'incomplete_install_warning'));
     } else {
-        $test_plugin_class = new TestPlugin_Class();
+        //pass in this file, as some hook require the SOURCE entry point file for this plugin to work
+        $test_plugin_class = new TestPlugin_Class(__FILE__);
     }
 

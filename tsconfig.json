@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./js",
+    "target": "es5",
+    "sourceMap": true,
+    "typeRoots" : ["./js/lib/@types"],
+    "types" : [
+      "jquery",
+      "i18n"
+    ],
+    "module": "UMD",
+    "moduleResolution": "node",
+    "paths": {
+      "@types/*": ["lib/@types/*"],
+      "jquery": ["lib/jquery/dist/jquery"],
+      "lib/*": ["lib/*"],
+      "*": [
+        "modules/*",
+        "*",
+        "lib/*",
+        "lib/@*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
