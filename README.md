@@ -5,7 +5,7 @@
   <img src="./images/wordpress-logo.jpg?raw=true" width="100" height="100" title="WordPress">
   <img src="./images/composer.png?raw=true" width="100" height="122" title="Composer">
   <img src="./images/icons8-typescript-150.png?raw=true" width="100" height="122" title="TypeScript">
-  <img src="./images/require-js.svg?raw=true" width="100" height="122" title="RequireJS">
+  <img src="./images/require-js.png?raw=true" width="100" height="122" title="RequireJS">
 </p>
 
 ![Screenshot of tiny-helpers.dev](./github_data/screenshot_folders.png)
