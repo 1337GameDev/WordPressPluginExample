@@ -1,0 +1,12 @@
+{
+  "extends": "./eslint.yml",
+  "plugins": [
+    "plugin",
+    "@scope/scoped-plugin",
+    "@scope"
+  ],
+  "rules": {
+    "@scope/scoped-plugin/foo-rule": [2],
+    "@scope/foo-rule": [2]
+  }
+}
